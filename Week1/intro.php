@@ -72,10 +72,19 @@ echo $Completed;
 echo '<br>';
 echo $x . ' ' . $y;
 echo '<br>';
-echo $name
+echo $name;
+echo '<br>';
 
+var_dump($name);
 # 4 COMPOUND TYPE
  #Array
+$companies = [1, 2, 3, -9.3, 'A', 'B', true, false];
+echo '<br>';
+//echo $companies;
+print_r($companies);
+
+echo '<br>';
+echo '<br>';
  #Object
  #Callable
  #Iterable
@@ -84,6 +93,36 @@ echo $name
  # Resource
  # null
 
+
+function sum(int $a, int $b)
+{
+$a = 3.5;
+var_dump($a, $b);
+echo '<br>';
+return $a + $b;
+}
+
+$sum = sum(1, 2);
+
+echo '<br>';
+
+echo $sum;
+
+
+// BOOLEAN
+$isCompleted = true;
+if ($isCompleted)
+{
+    // do something
+    echo '<br>';
+
+    echo 'success';
+
+}
+else{
+    // do something else
+    echo 'failed';
+}
 
 
 
