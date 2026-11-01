@@ -39,19 +39,76 @@ unset($programmingLanguages['php']);
 echo '<pre>';
 print_r($programmingLanguages);
 
-//OPERATOR PART 1
+//OPERATOR PART
+$a = 5;
 
-
-//OPERATOR PART 2
-
+$b = $a;
+echo '<pre>';
+echo $a;
 
 //OPERATOR PRECEDENCE AND ASSOCIATIVITY
+$x = 5 + 3 * 5;
+echo '<pre>';
+echo $x;
 
+$p = 5;
+$q = 2;
+$r = 10;
+echo '<pre>';
 
+$result = $p / $q * $r;
+echo '<pre>';
+echo $result;
 //CONTROL STRUCTURE-IF/ELSE
 
-
+$score = 50;
+if ($score >= 90){
+    echo '<pre>';
+    echo 'A';
+}elseif ($score >= 80){
+    echo 'B';
+}elseif ($score >= 70){
+    echo 'C';
+}elseif ($score >= 60){
+    echo 'D';
+}elseif ($score >= 50){
+    echo 'E';
+}elseif ($score >= 40){
+    echo 'F';
+}
 //LOOP-BREAK AND CONTINUE
 
+echo '</pre>';
+$i = 0;
+while ($i < 5){
+    echo $i++;
+}
 
+for ($i = 0; $i < 5; $i++){
+    echo $i++;
+}
 //SWITCH STATEMENT
+
+$paymentStatus = 'paid';
+
+switch ($paymentStatus){
+    case 'paid':
+        echo 'Paid';
+        break;
+
+        case 'unpaid':
+            echo 'Unpaid';
+            break;
+
+        case 'declined':
+              echo 'Declined';
+              break;
+
+              case 'pending':
+                  echo 'Pending';
+                  break;
+
+                  default:
+                      echo 'Unknown Payment Status';
+
+}
